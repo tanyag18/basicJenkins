@@ -1,10 +1,10 @@
 pipeline{
     agent any
     stages {
-        stage('Example') {
+        stage('Build') {
             steps {
                 echo 'Hello first pipeline'
-                sh 'mvn -version'
+                sh 'mvn -ve'
             }
         }
     }
